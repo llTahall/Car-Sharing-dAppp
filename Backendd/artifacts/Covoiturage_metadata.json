@@ -1,0 +1,242 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "aVote",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "annulerAnnonce",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "confirmerDepart",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_note",
+						"type": "uint8"
+					}
+				],
+				"name": "noterChauffeur",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_depart",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_arrivee",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_prix",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_places",
+						"type": "uint8"
+					}
+				],
+				"name": "proposerTrajet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_quantite",
+						"type": "uint8"
+					}
+				],
+				"name": "reserverPlaces",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "terminerLeTrajet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "trajets",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "chauffeur",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "departAdresse",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "arriveeAdresse",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dateHeureDepart",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "prix",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "placesTotales",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "placesDisponibles",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "montantCollecte",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Covoiturage.StatutTrajet",
+						"name": "statutT",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum Covoiturage.StatutAnnonce",
+						"name": "statutA",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Covoiturage.sol": "Covoiturage"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Covoiturage.sol": {
+			"keccak256": "0x0e9d82990782983ffe18993eb78a223ad6571484417fa12f47281131e6f96404",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1c61c916799623c3b2cdfd10f34360c0e2c598eaeb8f390d0c27633a0f1d5d5d",
+				"dweb:/ipfs/QmPpZsPe2AopkhTWTcSMoZqjSurGSqPMMhJ6oM7h7e8qSV"
+			]
+		}
+	},
+	"version": 1
+}
