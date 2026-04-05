@@ -18,6 +18,30 @@
 						"type": "address"
 					}
 				],
+				"name": "aDejaReserve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
 				"name": "aVote",
 				"outputs": [
 					{
@@ -50,9 +74,41 @@
 						"type": "uint256"
 					}
 				],
+				"name": "annulerMaReservation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
 				"name": "confirmerDepart",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getListePassagers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -230,11 +286,11 @@
 	},
 	"sources": {
 		"Covoiturage.sol": {
-			"keccak256": "0x0e9d82990782983ffe18993eb78a223ad6571484417fa12f47281131e6f96404",
+			"keccak256": "0x18ed0a9d858d7d212c74f10f5e78274cf7eff59c095fc4ee1e37e379e51cae86",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1c61c916799623c3b2cdfd10f34360c0e2c598eaeb8f390d0c27633a0f1d5d5d",
-				"dweb:/ipfs/QmPpZsPe2AopkhTWTcSMoZqjSurGSqPMMhJ6oM7h7e8qSV"
+				"bzz-raw://e8cf3b2eff27ce991717cb3ca82ed09d23f757f1dcb13eb324ea0564c890e611",
+				"dweb:/ipfs/QmdC9AyoDE5JNYcdob3e36MsW1CgAgS7amwAdi3mzwRzCf"
 			]
 		}
 	},
