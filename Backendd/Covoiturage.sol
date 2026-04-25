@@ -571,4 +571,21 @@ contract Covoiturage {
     function getLitige(uint256 _trajetId) external view returns (Litige memory) {
         return litiges[_trajetId];
     }
+    function getLitigesOuverts() external view returns (uint256[] memory) {
+    uint256 count = 0;
+    for (uint256 i = 0; i < trajets.length; i++) {
+        if (trajets[i].statutT == StatutTrajet.EN_LITIGE) count++;
+    }
+
+    uint256[] memory ids = new uint256[](count);
+    uint256 j = 0;
+    for (uint256 i = 0; i < trajets.length; i++) {
+        if (trajets[i].statutT == StatutTrajet.EN_LITIGE) {
+            ids[j] = i;
+            j++;
+        }
+    }
+    return ids;
+}
+
 }
